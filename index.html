@@ -434,7 +434,7 @@
   </style>
 </head>
 <body>
-<div class="wrap" id="app">
+<div class="wrap edit-mode" id="app">
 <header class="hero">
 <div class="hero-inner">
 <div class="hero-brand">
@@ -443,16 +443,16 @@
 <div class="pill-row">
 <div class="pill">Studio Mono Weekly Board</div>
 <div class="pill period">2026.05.11 - 2026.08.10</div>
-<div class="pill edit" id="editPill" style="display:none">Internal Edit Mode</div>
+<div class="pill edit" id="editPill" style="display: inline-flex;">Internal Edit Mode</div>
 </div>
 <h1>스튜디오 모노 주간 실행 대시보드</h1>
 <div class="brand-subline">Creative Space in Seoul</div>
 <p>이번 주 진행 상황, 우선순위, 다음 작업, 요청사항을 한 화면에서 공유합니다.</p>
 <div class="hero-actions">
 <button class="hero-btn active" id="editToggle">보기 모드로 전환</button>
-<button class="hero-btn" id="backupBtn" style="display:none">JSON 백업</button>
-<button class="hero-btn" id="exportHtmlBtn" style="display:none">index.html 내보내기</button>
-<button class="hero-btn" id="resetBtn" style="display:none">초기값 복원</button>
+<button class="hero-btn" id="backupBtn" style="display: inline-block;">JSON 백업</button>
+<button class="hero-btn" id="exportHtmlBtn" style="display: inline-block;">index.html 내보내기</button>
+<button class="hero-btn" id="resetBtn" style="display: inline-block;">초기값 복원</button>
 </div>
 </div>
 </div>
@@ -475,7 +475,7 @@
 <div class="week-grid" id="weekGrid"><button class="week-btn scheduled"><div class="w">Week 1</div><div class="p">5/11 - 5/17</div></button><button class="week-btn scheduled"><div class="w">Week 2</div><div class="p">5/18 - 5/24</div></button><button class="week-btn scheduled"><div class="w">Week 3</div><div class="p">5/25 - 5/31</div></button><button class="week-btn scheduled"><div class="w">Week 4</div><div class="p">6/1 - 6/7</div></button><button class="week-btn active"><div class="w">Week 5</div><div class="p">6/8 ~ 6/14</div></button><button class="week-btn"><div class="w">Week 6</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 7</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 8</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 9</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 10</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 11</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 12</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 13</div><div class="p">추후 설정</div></button><button class="week-btn"><div class="w">Week 14</div><div class="p">추후 설정</div></button></div>
 </div>
 </section>
-<section class="card edit-panel-card" id="editPanel" style="display:none;width:100%;max-width:100%;">
+<section class="card edit-panel-card" id="editPanel" style="display: block; width: 100%; max-width: 100%;">
 <div class="edit-panel">
 <div class="flow-head">
 <div>
@@ -492,7 +492,7 @@
 </div>
 <div style="margin-top:14px">
 <div class="flow-head"><h3 style="font-size:14.5px">작업 리스트 편집</h3><button class="mini-btn blue" id="addTaskBtn">+ 작업 추가</button></div>
-<div id="editTaskList" style="display:grid;gap:8px;margin-top:10px"><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="일본향 타겟 고객층 리서치 및 리스트업 예정"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="확보 타겟 대상 1차 다이렉트 컨택 시작"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="월드컵 콘텐츠 반응 피드백 분석"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="Meta Business Suite 광고 캠페인 비용 지불 및 운영 시작"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="광고 타겟, 예산, 소재 반응 세분화 관리"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="GitHub Pages 기반 대시보드 업로드 및 재공유"><select><option selected="">완료</option><option>진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button class="mini-btn danger">삭제</button></div></div>
+<div id="editTaskList" style="display:grid;gap:8px;margin-top:10px"><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="일본향 타겟 고객층 리서치 및 리스트업 예정"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="확보 타겟 대상 1차 다이렉트 컨택 시작"><select><option>완료</option><option selected="">진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="월드컵 콘텐츠 반응 피드백 분석"><select><option>완료</option><option>진행 중</option><option>예정</option><option selected="">확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="Meta Business Suite 광고 캠페인 비용 지불 및 운영 시작"><select><option>완료</option><option>진행 중</option><option>예정</option><option selected="">확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="광고 타겟, 예산, 소재 반응 세분화 관리"><select><option>완료</option><option>진행 중</option><option>예정</option><option selected="">확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div><div style="display: grid; grid-template-columns: minmax(420px, 1fr) 130px 150px auto; gap: 6px; align-items: center;"><input value="GitHub Pages 기반 대시보드 업로드 및 재공유"><select><option selected="">완료</option><option>진행 중</option><option>예정</option><option>확인 필요</option><option>미정</option></select><input value="SH"><button type="button" class="mini-btn danger">삭제</button></div></div>
 </div>
 </div>
 </section>
@@ -510,13 +510,13 @@
 </div>
 <div class="progress-box"><div class="label">진행률</div><div class="progress-value" id="progressText">45%</div><div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 45%;"></div></div></div>
 </div>
-<div style="margin-top:14px"><h3 class="section-title">이번 주 작업</h3><div class="tasks" id="taskList"><div class="task"><div class="task-name">일본향 타겟 고객층 리서치 및 리스트업 예정</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">확보 타겟 대상 1차 다이렉트 컨택 시작</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">월드컵 콘텐츠 반응 피드백 분석</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">Meta Business Suite 광고 캠페인 비용 지불 및 운영 시작</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">광고 타겟, 예산, 소재 반응 세분화 관리</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">GitHub Pages 기반 대시보드 업로드 및 재공유</div><div class="owner">SH</div><span class="status done">완료</span></div></div></div>
+<div style="margin-top:14px"><h3 class="section-title">이번 주 작업</h3><div class="tasks" id="taskList"><div class="task"><div class="task-name">일본향 타겟 고객층 리서치 및 리스트업 예정</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">확보 타겟 대상 1차 다이렉트 컨택 시작</div><div class="owner">SH</div><span class="status doing">진행 중</span></div><div class="task"><div class="task-name">월드컵 콘텐츠 반응 피드백 분석</div><div class="owner">SH</div><span class="status need">확인 필요</span></div><div class="task"><div class="task-name">Meta Business Suite 광고 캠페인 비용 지불 및 운영 시작</div><div class="owner">SH</div><span class="status need">확인 필요</span></div><div class="task"><div class="task-name">광고 타겟, 예산, 소재 반응 세분화 관리</div><div class="owner">SH</div><span class="status need">확인 필요</span></div><div class="task"><div class="task-name">GitHub Pages 기반 대시보드 업로드 및 재공유</div><div class="owner">SH</div><span class="status done">완료</span></div></div></div>
 </div>
 </section>
 
 <div class="side-stack"><section class="card"><div class="kpi-wrap"><h3>KPI</h3><div class="kpi-list" id="kpiList"><div class="kpi blue"><div class="kpi-title">3개월 핵심 성과 기준</div><div class="kpi-value">일본인 고객 유치 → 이벤트 실행 → 매출 발생</div><div class="kpi-desc">단순 콘텐츠 반응이 아니라 실제 예약·운영·결제 가능성이 확인되는 단계까지 도달하는 것을 최종 검증 기준으로 설정합니다.</div></div><div class="kpi purple"><div class="kpi-title">5월 말 1차 마일스톤</div><div class="kpi-value">초기 콘텐츠 제작 및 타겟 배포 개시</div><div class="kpi-desc">숏츠, 일본어 소개문, 사이트·팜플렛·블로그 활용 콘텐츠를 우선 제작하고 일본 타겟 대상 직접 배포를 시작합니다.</div></div><div class="kpi pink"><div class="kpi-title">초기 레퍼런스 목표</div><div class="kpi-value">무료 제공 조건 기반 테스트 이벤트 1건</div><div class="kpi-desc">촬영, 후기, SNS 활용 동의가 가능한 경우 5월 내 또는 초반부에 실제 공간 활용 사례를 빠르게 확보합니다.</div></div></div></div></section><section class="card">
 <div class="requests">
-<div class="flow-head"><div><h3>스튜디오 모노 요청/협력 사항</h3><p id="requestHint">체크박스로 완료 상태를 변경할 수 있습니다.</p></div><button class="mini-btn blue" id="addRequestBtn" style="display:none">+ 요청 추가</button></div>
+<div class="flow-head"><div><h3>스튜디오 모노 요청/협력 사항</h3><p id="requestHint">체크박스로 완료 상태를 변경할 수 있습니다.</p></div><button class="mini-btn blue" id="addRequestBtn" style="display: inline-block;">+ 요청 추가</button></div>
 <div class="req-list" id="requestList"><div style="border: 1px dashed rgb(209, 213, 219); border-radius: 12px; padding: 12px; color: rgb(107, 114, 128); font-size: 13.5px; background: rgb(255, 255, 255);">해당 주차에 표시할 요청/협력 사항이 없습니다.</div></div>
 </div>
 </section></div></section>
@@ -527,11 +527,12 @@
 <div><h3>월간 캘린더</h3><p class="hint" id="calendarHint">편집 모드: 날짜를 클릭해 일정을 추가·수정합니다.</p></div>
 <select id="monthSelect"><option value="2026-05">2026년 5월</option><option value="2026-06">2026년 6월</option><option value="2026-07">2026년 7월</option><option value="2026-08">2026년 8월</option></select>
 </div>
-<div class="calendar-grid project-calendar" id="calendarGrid"><div class="dow">주차</div><div class="dow">월</div><div class="dow">화</div><div class="dow">수</div><div class="dow">목</div><div class="dow">금</div><div class="dow">토</div><div class="dow">일</div><div class="week-row-label">W4</div><button type="button" class="day has-event visit"><div class="day-num">1</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅</div></button><button type="button" class="day has-event"><div class="day-num">2</div><div class="event" style="border-left-color:#9ca3af;color:#374151">컨텐츠 제작 및 대시보드 활성화 준비</div></button><button type="button" class="day has-event"><div class="day-num">3</div><div class="event" style="border-left-color:#9ca3af;color:#374151">월드컵 홍보 컨텐츠 제작 및 게시</div></button><button type="button" class="day has-event visit"><div class="day-num">4</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅</div></button><button type="button" class="day has-event"><div class="day-num">5</div><div class="event" style="border-left-color:#9ca3af;color:#374151">Meta Business suite 커스텀</div></button><button type="button" class="day"><div class="day-num">6</div></button><button type="button" class="day has-event"><div class="day-num">7</div><div class="event" style="border-left-color:#9ca3af;color:#374151">주간 결과 정리차주 작업 항목 설정</div></button><div class="week-row-label active">W5</div><button type="button" class="day has-event visit"><div class="day-num">8</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅
+<div class="calendar-grid project-calendar" id="calendarGrid"><div class="dow">주차</div><div class="dow">월</div><div class="dow">화</div><div class="dow">수</div><div class="dow">목</div><div class="dow">금</div><div class="dow">토</div><div class="dow">일</div><div class="week-row-label">W4</div><button type="button" class="day has-event visit"><div class="day-num">1</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅</div></button><button type="button" class="day has-event"><div class="day-num">2</div><div class="event" style="border-left-color:#9ca3af;color:#374151">컨텐츠 제작 및 대시보드 활성화 준비</div></button><button type="button" class="day has-event"><div class="day-num">3</div><div class="event" style="border-left-color:#9ca3af;color:#374151">월드컵 홍보 컨텐츠 제작 및 게시</div></button><button type="button" class="day has-event visit"><div class="day-num">4</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅</div></button><button type="button" class="day has-event"><div class="day-num">5</div><div class="event" style="border-left-color:#9ca3af;color:#374151">Meta Business suite 커스텀</div></button><button type="button" class="day"><div class="day-num">6</div></button><button type="button" class="day"><div class="day-num">7</div></button><div class="week-row-label active">W5</div><button type="button" class="day has-event visit"><div class="day-num">8</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅
 금주 운영 방향 정리</div></button><button type="button" class="day has-event"><div class="day-num">9</div><div class="event" style="border-left-color:#9ca3af;color:#374151">Meta 광고 운영 시작
 콘텐츠 반응 1차 확인</div></button><button type="button" class="day has-event"><div class="day-num">10</div><div class="event" style="border-left-color:#9ca3af;color:#374151">광고 타겟·예산 점검
-월드컵 콘텐츠 반응 분석</div></button><button type="button" class="day has-event"><div class="day-num">11</div><div class="event" style="border-left-color:#9ca3af;color:#374151">GitHub Pages 대시보드 수정내부 공유용 최신화</div></button><button type="button" class="day has-event visit today"><div class="day-num">12</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅. 광고 집행 피드백 관리 진행.</div></button><button type="button" class="day has-event"><div class="day-num">13</div><div class="event" style="border-left-color:#9ca3af;color:#374151">광고 성과 모니터링
-문의 가능성 체크</div></button><button type="button" class="day has-event"><div class="day-num">14</div><div class="event" style="border-left-color:#9ca3af;color:#374151">주간 결과 정리차주 작업 항목 설정</div></button><div class="week-row-label">W6</div><button type="button" class="day"><div class="day-num">15</div></button><button type="button" class="day"><div class="day-num">16</div></button><button type="button" class="day"><div class="day-num">17</div></button><button type="button" class="day"><div class="day-num">18</div></button><button type="button" class="day"><div class="day-num">19</div></button><button type="button" class="day"><div class="day-num">20</div></button><button type="button" class="day"><div class="day-num">21</div></button><div class="week-row-label">W7</div><button type="button" class="day"><div class="day-num">22</div></button><button type="button" class="day"><div class="day-num">23</div></button><button type="button" class="day"><div class="day-num">24</div></button><button type="button" class="day"><div class="day-num">25</div></button><button type="button" class="day"><div class="day-num">26</div></button><button type="button" class="day"><div class="day-num">27</div></button><button type="button" class="day"><div class="day-num">28</div></button><div class="week-row-label">W8</div><button type="button" class="day"><div class="day-num">29</div></button><button type="button" class="day"><div class="day-num">30</div></button><div></div><div></div><div></div><div></div><div></div></div>
+월드컵 콘텐츠 반응 분석</div></button><button type="button" class="day has-event"><div class="day-num">11</div><div class="event" style="border-left-color:#9ca3af;color:#374151">GitHub Pages 대시보드 수정내부 공유용 최신화</div></button><button type="button" class="day has-event visit today"><div class="day-num">12</div><div class="event" style="border-left-color:#2563eb;color:#1e40af">논현 미팅. 메타 광고 집행 오류 관련 이슈.</div></button><button type="button" class="day has-event"><div class="day-num">13</div><div class="event" style="border-left-color:#9ca3af;color:#374151">광고 성과 모니터링
+문의 가능성 체크</div></button><button type="button" class="day has-event"><div class="day-num">14</div><div class="event" style="border-left-color:#9ca3af;color:#374151">주간 결과 정리
+차주 작업 항목 설정</div></button><div class="week-row-label">W6</div><button type="button" class="day"><div class="day-num">15</div></button><button type="button" class="day"><div class="day-num">16</div></button><button type="button" class="day"><div class="day-num">17</div></button><button type="button" class="day"><div class="day-num">18</div></button><button type="button" class="day"><div class="day-num">19</div></button><button type="button" class="day"><div class="day-num">20</div></button><button type="button" class="day"><div class="day-num">21</div></button><div class="week-row-label">W7</div><button type="button" class="day"><div class="day-num">22</div></button><button type="button" class="day"><div class="day-num">23</div></button><button type="button" class="day"><div class="day-num">24</div></button><button type="button" class="day"><div class="day-num">25</div></button><button type="button" class="day"><div class="day-num">26</div></button><button type="button" class="day"><div class="day-num">27</div></button><button type="button" class="day"><div class="day-num">28</div></button><div class="week-row-label">W8</div><button type="button" class="day"><div class="day-num">29</div></button><button type="button" class="day"><div class="day-num">30</div></button><div></div><div></div><div></div><div></div><div></div></div>
 </div>
 </section>
 
@@ -541,7 +542,7 @@
 <div class="modal-backdrop" id="eventModal">
 <div class="modal">
 <h3>캘린더 일정 편집</h3>
-<p class="hint" id="modalDateText">2026-06-07</p>
+<p class="hint" id="modalDateText">2026-06-11</p>
 <div class="modal-fields">
 <div><div class="field-label">일정 내용</div><input id="modalEventLabel" placeholder="예: 논현 미팅"></div>
 <div><div class="field-label">일정 유형</div><select id="modalEventType"><option value="visit">논현 미팅</option><option value="work">작업</option><option value="release">배포</option><option value="request">요청</option><option value="start">시작</option></select></div>
@@ -549,7 +550,8 @@
 <div class="modal-actions"><button class="mini-btn danger" id="deleteEventBtn">삭제</button><div class="right"><button class="mini-btn" id="cancelEventBtn">취소</button><button class="mini-btn blue" id="saveEventBtn">저장</button></div></div>
 </div>
 </div>
-<script data-version="vo-fixed-interactions-20260609" id="dashboard-data" type="application/json">
+
+<script data-version="vo1781241337988" id="dashboard-data" type="application/json">
 {
   "weeks": [
     {
@@ -722,14 +724,9 @@
       "headline": "콘텐츠 반응 분석 · Meta 광고 운영 시작 · GitHub 대시보드 재공유",
       "summary": "금주는 지난주 제작 및 운영한 월드컵 관련 콘텐츠의 반응을 확인하고, 한국 고객 대상 콘텐츠 운영 방향을 점검하는 주간입니다.\n\n금주부터 스튜디오 모노 한국 인스타그램 계정을 대상으로 Meta Business Suite 광고 캠페인 비용 지불 및 운영을 시작했습니다. 단순 게시물 업로드에 그치지 않고, 광고 캠페인을 통해 콘텐츠 도달 범위, 잠재 고객 반응, 공간 대관 문의 가능성을 검증합니다.\n\n또한 기존 Netlify 기반 테스트 대시보드를 GitHub Pages 방식으로 전환하여 재공유하고, 금주 진행 상황을 반영한 최신 대시보드로 내부 공유 체계를 다시 정리합니다.",
       "priority": "높음",
-      "progress": 15,
+      "progress": 45,
       "status": "pending",
       "tasks": [
-        {
-          "name": "캐릭터 컨셉 반영 카드형 콘텐츠·포스터·공간 소개 이미지 제작",
-          "status": "진행 중",
-          "owner": "SH"
-        },
         {
           "name": "일본향 타겟 고객층 리서치 및 리스트업 예정",
           "status": "진행 중",
@@ -742,22 +739,22 @@
         },
         {
           "name": "월드컵 콘텐츠 반응 피드백 분석",
-          "status": "진행 중",
+          "status": "확인 필요",
           "owner": "SH"
         },
         {
           "name": "Meta Business Suite 광고 캠페인 비용 지불 및 운영 시작",
-          "status": "예정",
+          "status": "확인 필요",
           "owner": "SH"
         },
         {
           "name": "광고 타겟, 예산, 소재 반응 세분화 관리",
-          "status": "예정",
+          "status": "확인 필요",
           "owner": "SH"
         },
         {
           "name": "GitHub Pages 기반 대시보드 업로드 및 재공유",
-          "status": "예정",
+          "status": "완료",
           "owner": "SH"
         }
       ]
@@ -1081,13 +1078,13 @@
     },
     {
       "date": "2026-06-11",
-      "label": "논현 미팅\n광고 운영 피드백 공유",
-      "type": "visit"
+      "label": "GitHub Pages 대시보드 수정내부 공유용 최신화",
+      "type": "work"
     },
     {
       "date": "2026-06-12",
-      "label": "GitHub Pages 대시보드 수정\n내부 공유용 최신화",
-      "type": "work"
+      "label": "논현 미팅. 메타 광고 집행 오류 관련 이슈.",
+      "type": "visit"
     },
     {
       "date": "2026-06-13",
@@ -1106,8 +1103,7 @@
     }
   ]
 }
-  </script>
-<script>
+</script><script>
 (function(){
   const DASHBOARD_DATA_NODE = document.getElementById("dashboard-data");
   const EMBEDDED_DATA_VERSION = DASHBOARD_DATA_NODE?.dataset?.version || "vo-fixed-20260612";
@@ -1360,5 +1356,6 @@
   renderAll();
 })();
 </script>
+
 
 </body></html>
